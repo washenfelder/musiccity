@@ -15,6 +15,7 @@ font-family: 'Anton', sans-serif; */
 	display: flex;
 	justify-content: center;
 	background: #3d3d3d;
+    text-align: center
 }
 .social h2{
 	display: inline-block;
@@ -43,37 +44,6 @@ font-family: 'Anton', sans-serif; */
     margin-bottom: 5px;
     margin-left: 10px;
 }
-/*
-.left-side h2{
-	display:inline-block;
-	padding: 10px;
-	font-family: 'Open Sans', sans-serif;
-	color: rgb(229, 229, 229);
-	font-size: 18px;
-}
-.left-side{
-	margin-left: 115px;
-}
-.right-side{
-	margin-right: 115px;
-}
-.right-side i{
-	color: rgb(229, 229, 229);
-	padding: 10px;
-	font-size: 18px;
-}
-.right-side a{
-	text-decoration: none;
-    list-style: none;
-    color: #fff;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-   }
-b{
-	color: #7081c7;
-    font-weight: bold;
-}
-*/
 .head{
 	background: #3d3d3d;
    
@@ -114,89 +84,47 @@ b{
     border-bottom-width: 1px;
     border-bottom-style: solid;
 }
-.navbar li{
-
-}
-.navbar img{
-	width: 22%;
+.navbar img {
+    width: 22%;
     height: 165px;
     margin-top: 38px;
 }
-.head-img{
-    position: relative;
-    width: 100%;
-}
-.head-img h2{
-    position: absolute;
-    color: rgba(255, 255, 255, 0.68);
-    font-size: 50px;
-    right: -1px;
-    bottom: 100px;
-    width: 38%;
-    text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
-    
-    }
 
-.head-img img{
-	width: 100%;
-}
-.contenedor-foot{
+
+.contenedor{
     display: flex;
-    flex-direction: row;
-}
-.contenedor-foot{
-	    display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
-    background: #3d3d3d;
-
-}
-.contenedor-foot article{
-	    flex:1;
-    display: flex;
-    flex-direction: column
-
-}
-.contenedor-foot p{
-	display: inline-block;
-    padding: 10px;
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(229, 229, 229);
-    font-size: 20px;
-    text-align: center;
-    
-}
-.contenedor-foot h2{
-	text-align: center;
-    padding: 10px 0;
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(229, 229, 229);
-    font-size: 20px;
-    text-transform: uppercase;
+    background-image: url(../img/metal2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
-    background: rgba(84, 106, 123, 0.3);
 }
-.contenedor-foot i{
-	display: inline-block;
-    padding: 10px;
-    color: rgb(229, 229, 229);
-    font-size: 26px; 
-    text-align: center;
-}
-.contenedor-foot h3{
-    text-align: center;
-    padding: 10px;
-    font-family: 'Open Sans', sans-serif;
-    color: rgba(0, 0, 0, 0.78);
-    font-size: 20px;
-    
-    
-    
-    }
-.art{
+.contenedor article{
+    width: 49%;
     display: flex;
     flex-direction: column;
-    align-items: center;display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0,0.3);
+    margin:5px;
+}
+.contenedor p,h2,h3{
+    width: 50%;
+    color: #fff;
+}
+.contenedor img{
+    width: 100%;
+}
+
+.contenedor h2{
+    font-size: 35px;
+}
+.contenedor h3{
+    font-size: 20px;
+    margin-top: 10px
+}
+.contenedor p{
+    margin-top: 10px:
 }
 
 
@@ -233,6 +161,10 @@ footer h2{
 
 
 
+
+
+
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait),
 only screen and (max-device-width: 768px){
     .social{
@@ -247,6 +179,7 @@ only screen and (max-device-width: 768px){
     color: rgb(229, 229, 229);
     font-size: 17px;
     text-transform: uppercase;
+        width: 100%;
     
 	}
 	.social h2::before{
@@ -325,70 +258,41 @@ only screen and (max-device-width: 768px){
     margin-top: 33px;
 	}
 
-    .head-img h2 {
-    position: absolute;
-    color: rgba(255, 255, 255, 1);
-    font-size: 27px;
-    bottom: 11px;
-    width: 33%;
-    text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
-    background: rgba(0, 0, 0, 0.14);
-    right: 31px;
-    
-}
-
-    
-
-
-
-
-	.contenedor-foot{
-	 display: flex;
+    .contenedor {
+   display: flex;
     flex-direction: column;
     justify-content: center;
-    background: #3d3d3d;
-
-	}	
-	.contenedor-foot p{
-	display: inline-block;
-    padding: 10px;
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(229, 229, 229);
-    font-size: 20px;
-
-    
-    
-	}
-	.contenedor-foot h2{
-    text-align: center;
-    padding: 10px 0;
-    font-family: 'Open Sans', sans-serif;
-    color: rgb(229, 229, 229);
-    font-size: 20px;
-    text-transform: uppercase;
-    background: rgba(84, 106, 123, 0.33);
+    background-image: url(../img/metal2.jpg);
+    align-items: center;
+    background-size: 100%;
     width: 100%;
-    letter-spacing: 1px;
-	}
-	.contenedor-foot i{
-	display: inline-block;
-    padding: 8px;
-    color: rgb(229, 229, 229);
-    font-size: 27px;
-    margin-left: 9px;
-    
-	}
-    .contenedor-foot h3{
-    text-align: center;
-    padding: 10px;
-    font-family: 'Open Sans', sans-serif;
-    color: rgba(0, 0, 0, 0.61);
-    font-size: 20px;
-    text-transform: capitalize;
-    
-    
+    background-repeat: repeat;
+}
+    .contenedor article {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0,0,0,0.3);
+    margin: 10px 0;
+}
+    .contenedor p,h2,h3{
+    width: 50%;
+    color: #fff;
+}
+    .contenedor img{
+        width: 100%;
     }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
 
